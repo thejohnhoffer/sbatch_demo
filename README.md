@@ -14,7 +14,7 @@ Run `bash singularity/test.sh`
 
 This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use a conda virtual environment for python. We use `sbatch --array` to set up 4 parallel jobs differing only by `$SLURM_ARRAY_TASK_ID`. Full documentation for the `--array` option is [here][array].
 
-- Run `bash pytorch/test.sh`
+Run `bash pytorch/test.sh`
 - Outputs go to `pytorch/*.out`
 - Errors go to `pytorch/*.err`
 
