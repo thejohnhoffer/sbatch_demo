@@ -4,7 +4,7 @@ First you'll need to get access [to the cluster][account].
 
 ### [singluarity](singularity)
 
-This prints the singularity help from coxgpu05. As of 2017-09-13, this is the only node on the cluster that supports singluarity. Singularity can [import docker images][docker].
+This prints the singularity help from `coxgpu05`. As of 2017-09-13, `coxgpu05` is the only node on the cluster that supports singluarity. Singularity can [import docker images][docker]. Even with an RC Account, you will need to be added to the `cox_lab` group in order to use this machine. 
 
 Run `bash singularity/test.sh`
 - Outputs go to `singularity/0.out`
