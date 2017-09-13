@@ -12,7 +12,7 @@ Run `bash singularity/test.sh`
 
 ### pytorch
 
-This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use a conda virtual environment for python.
+This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use a conda virtual environment for python. We use `sbatch --array` to set up 4 parallel jobs differing only by `$SLURM_ARRAY_TASK_ID`. Full documentation for the `--array` option is [here][array].
 
 - Run `bash pytorch/test.sh`
 - Outputs go to `pytorch/*.out`
@@ -27,3 +27,5 @@ squeue
 
 [account]:https://portal.rc.fas.harvard.edu/request/account/new
 [docker]:http://singularity.lbl.gov/docs-import
+
+[array]:https://slurm.schedmd.com/job_array.html
