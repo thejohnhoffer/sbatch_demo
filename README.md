@@ -12,7 +12,7 @@ Run `bash singularity/test.sh`
 
 ### pytorch
 
-This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use the a python virtual environment.
+This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use a conda virtual environment for python.
 
 - Run `bash pytorch/test.sh`
 - Outputs go to `pytorch/*.out`
