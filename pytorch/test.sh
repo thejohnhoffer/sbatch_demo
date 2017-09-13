@@ -1,8 +1,7 @@
 cd `dirname $0`
 # Export names to sbatch
-VENV_NAME="PYTORCH"
-PYTHON="pytorch.py"
-EXPORT="ALL"
+export VENV_NAME="PYTORCH"
+export PYTHON="pytorch.py"
 
 # Get python running
 source new-modules.sh 
@@ -20,4 +19,4 @@ fi
 
 # Run the SBATCH JOB
 LOG="-o %a.out -e %a.err"
-sbatch $LOG --export="$EXPORT" --array=1-4 pytorch.sbatch 
+sbatch $LOG --export=ALL --array=1-4 pytorch.sbatch 
