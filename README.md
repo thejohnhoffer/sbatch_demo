@@ -2,7 +2,7 @@
 
 First you'll need to get access [to the cluster][account].
 
-### singluarity
+### [singluarity](singularity)
 
 This prints the singularity help from coxgpu05. As of 2017-09-13, this is the only node on the cluster that supports singluarity. Singularity can [import docker images][docker].
 
@@ -10,7 +10,7 @@ Run `bash singularity/test.sh`
 - Outputs go to `singularity/0.out`
 - Errors go to `singularity/0.err`
 
-### pytorch
+### [pytorch](pytorch)
 
 This prints the documentation for pytorch from 4 different CPUs on 1-4 different cluster nodes. We create and use a conda virtual environment for python. We use `sbatch --array` to set up 4 parallel jobs differing only by `$SLURM_ARRAY_TASK_ID`. Full documentation for the `--array` option is [here][array].
 
